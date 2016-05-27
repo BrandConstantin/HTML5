@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-family: sans, "lucida grande", tahoma, verdana, sans-serif;
+	background-color: #FFF;
+	color: #000;
+}
+
+#linkList {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+}
+
+#container{
+	width: 80%;
+	margin-left: 20%;
+} 
+
+#pageHeader h1{
+	top: 10px;
+	left: 10px;
+	border: 1px #000 solid;
+	background-color: #DDD;
+	position: relative;
+	margin: 0;
+	padding: 10px;
+}
+
+#pageHeader h2{
+	margin: 0;
+	border: solid #DDD 1px;
+	padding: 15px;
+}

@@ -1,0 +1,81 @@
+﻿body { 
+  font-family: sans-serif; 
+  margin: 5px;  
+}
+
+/*Sino ponemos el margen 0 en h1 y h6, nos aplica el margen que tenga por defecto el navegador
+y h1 aparece muy separado de h6, y a su vez h6 de h2*/
+h1 { 
+  background-color: #BBBBBB;
+  padding: 0px 10px;  
+  margin: 0px; 
+}
+
+h6 { 
+  background-color: #BBBBBB; 
+  padding: 0px 10px;
+  margin: 0px; 
+ }
+ 
+ /*En la parte inferior de h2, si nos interesa que haya un margen y un padding*/
+ h2 { 
+  text-align: right; 
+  background-color: #DDDDDD; 
+  border-bottom: #BBBBBB 3px dashed;
+  margin: 0px 0px 10px; 
+  padding: 0px 10px 5px; 
+
+} 
+ 
+/*Sino ponemos el margen 0 en h3, nos aplica el margen que tenga por defecto el navegador
+  y h3 aparece muy separado del div que hay debajo.
+  Puesto que no debemos modificar nada del código html, tenemos que utilizar la regla:text-transform: uppercase;.
+  Ponemos la fuente un 10% más grande para que quede mas parecida a la imagen.
+  */ 
+ h3 { 
+  text-align: center; 
+  text-transform: uppercase; /*OJO*/
+  font-size: 110%;
+  background-color: #EEEEEE; 
+  margin: 0px;
+  padding: 10px 0px 
+
+}
+/*El margen a 0 para que no nos quede separado del p que hay debajo*/
+h4 { 
+  text-align: right;
+  font-size: 110%;
+  background-color: #BBBBBB; 
+  color: white; 
+  margin: 0px; 
+  padding: 0px 10px; 
+
+}
+
+div.bloque { 
+  border-right: #AAAAAA 3px dashed; 
+  border-left: #AAAAAA 3px dashed; 
+  float: left; 
+  margin: 5px;
+  padding: 0px 10px; 
+  width: 150px; 
+
+}
+
+/*Podemos poner también la propiedad:overflow: auto; para que salgan barras desplazamiento en anuncio EM002,
+ pero solo en este sitio que tiene overflow. Si ponemos overflow:scroll, entoces aparecen en todos las barras
+ de desplazmiento desactivadas (y no hacen falta), menos en EM002 que si estarán activas. 
+ Igual ocurre con overflow-x:scroll*/
+div div { 
+  border: black 1px solid; 
+  margin: 5px 0px; 
+  overflow-x:auto;
+}
+
+p { 
+  padding: 0px 10px; 
+  margin: 5px;
+
+}
+
+

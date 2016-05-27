@@ -1,0 +1,14 @@
+﻿/*Para que una caja quede al lado de la otra las dos deben tener el
+ posicionamiento flotante*/
+
+div{ margin-top:10px;
+	height:200px;
+	width:200px;
+	}
+div#caja1{background:red;
+		float:left;
+		}
+div#caja2{
+		 background:blue;
+		 float:left;
+		 }

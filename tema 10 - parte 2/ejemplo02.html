@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Menú Horizontal</title>
+	<style type="text/css">
+	body{
+		background-color: #277554;
+		padding-top: 40px;
+		padding-left: 40px;
+	}
+	p{
+		font-size: 15px;
+		font-style: normal;
+		font-family: verdana;
+		color:#A39292;
+	}
+	.borde{
+		background-color: #FFF;
+		width: 910px;
+		height: 450px;
+	}
+	#caja1, #caja3{
+		background-color:  #801515;
+		height: 100px;
+		padding-left: 10px;
+		width: 900px;
+		position: absolute;
+	}
+	#caja1{
+		margin-top: 10px;
+	}
+	#caja3{
+		margin-top: 170px;
+	}
+	#caja2{
+		background-color: #FA0;
+		padding-left: 10px;
+		margin-left: 40px;
+		margin-top: 80px;
+		width: 560px;
+		position: absolute;
+	}
+	</style>
+</head>
+<body>
+	<div class="borde">
+		<div id="caja1">
+			<p>Esta es la primer caja.</p>
+			<p>No se desplaza.</p>
+		</div>
+		<div id="caja3"> 
+			<p>Esta es la tercera caja.</p> 
+			<p>No se desplaza.</p> 
+		</div>
+		<div id="caja2">
+			<p>Esta es la segunda caja.</p> 
+			<p>Se desplaza a la coordenada de pantalla 40 en columna y 30 en fila (en píxeles).</p> 
+		</div> 
+</div>
+</body>
+</html>

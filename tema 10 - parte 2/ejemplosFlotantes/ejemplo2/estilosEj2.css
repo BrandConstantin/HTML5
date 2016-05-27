@@ -1,0 +1,18 @@
+﻿/*Para que una caja quede al lado de la otra las dos deben tener el
+ posicionamiento flotante*/
+
+
+#caja1{ margin-left:10px;
+		height:200px;
+		width:200px;
+		background:red;
+		float:left;
+		}
+#caja2{	 height:200px;
+		 width:400px;
+		 background:blue;
+		/*float:left;*/
+}
+
+/*Si la 2ª caja no es flotante, se solapa con la caja1. Y su contenido se  
+se adapta a la caja flotante*/

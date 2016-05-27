@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lorem ipsum</title>
+	<style type="text/css">
+	p{	border:2px solid black;
+		width:100px;
+		height:100px;
+		margin:3px;
+		padding:3px;
+		/*display:inline;*/
+		/*display:inline-block;*/
+		float:left; /* Podriamos pensar que si los quiero uno al lado del otro pues 
+						ponerlo en línea (display:inline), pero entonces no me respeta
+						alto.
+						Con display:inline-block, tendriamos que aplicarle un salto de línea */
+	}
+	p#limpia{clear:both;}
+	</style>
+</head>
+
+
+<body>
+
+<p>Esto es un párrafo</p>
+<p>Esto es un párrafo</p>
+<p>Esto es un párrafo</p>
+
+<p id="limpia">Esto es un párrafo</p>
+<p>Esto es un párrafo</p>
+<p>Esto es un párrafo</p>
+
+</body>
+</html>

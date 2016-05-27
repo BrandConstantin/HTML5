@@ -1,0 +1,197 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la página se vea correctamente.
+   ================================================================== */
+
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { 
+  margin: 3px; padding: 3px; list-style: none;
+ }
+h1, h2, h3, p, form { 
+  margin: 3px; padding: 3px;
+ }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 3px solid #555;
+}
+
+#cabecera { clear: both; }
+#menu { clear: both; }
+#lateral { 
+  float: left;
+  width: 20%; }
+#contenido {
+  float: right;
+  width: 78%;
+ }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { 
+  display: inline;
+  float: left;
+}
+
+#menu ul#menu_principal li a{
+  color: #FFF;
+}
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+
+#contenido {
+  width: 77%;
+  padding: 0;
+}
+
+#contenido #principal {
+  width: 73%;
+}
+
+/* === IMPORTANTE ===================================================
+   A partir de aquí, se pueden añadir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */
+/*ej4.1*/
+/*--La propiedad border no se hereda. No nos vale poner body{boder-style:none}. 
+ Y aunque se heredara,  la línea 20 es más específica que body {boder-style:none}
+ -- Tampoco podemos poner * {boder-style:none}, porque la línea 20 es más específica */
+#cabecera, #menu, #lateral, #contenido, #contenido #principal,
+#contenido #secundario,#pie {
+border-style:none; /* o también border:none;*/
+}
+/*fin ej4.1*/
+
+#cabecera {
+  padding: 1em;
+}
+
+/*ej5.5*/
+#cabecera  h1{
+   background: url("imagenes/logo.gif") no-repeat -5px -10px;
+}  
+#cabecera  h1 span{
+   visibility:hidden;
+}  
+/*fin ej5.5*/ 
+
+
+#menu {
+  padding:0.5em;
+  margin-bottom: .5em;
+  /*ej4.2*/ border-bottom: 1px solid #004C99;/*fin ej4.2*/
+  
+  /*ej5.4*/ 
+  background-image:url("imagenes/fondo_menu.gif") ;
+  /* o tambien background: url("imagenes/fondo_menu.gif") repeat-x; Pero no es necesario porque se repite 
+  por toda la caja*/
+  
+  /*Así vemos que aparece una vez, si le decimos no-repeat*/
+  /*background-repeat:no-repeat;*/
+ /*fin ej5.4 */ 
+  
+  
+  
+}
+
+#lateral #noticias,
+#lateral #publicidad,
+#contenido #principal,
+#contenido #secundario
+{
+  padding: .5em;
+}
+
+#contenido #principal .articulo {
+  margin-bottom: 1em;
+}
+
+
+#contenido #principal .articulo img { 
+  margin: .5em;
+}
+
+
+#lateral #publicidad {
+  margin-top: 1em;
+  /*ej4.4*/
+  border: 1px dashed #C60;
+  /*fin ej4.4*/
+  
+  /*ej5.2*/
+  background-color:#FFF6CD;
+  /*fin ej5.2*/
+}
+
+
+#pie {
+  padding: .5em 0;
+  margin-top: 1em;
+  /*ej4.6*/
+  border-top: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5;
+
+/*También podriamos haber puesto*/
+  /*border-style: solid none;
+  border-color: #C5C5C5;
+  border-width:1px;*/
+  /*fin ej4.6*/
+  
+/*ej5.1.*/
+  background-color:#F8F8F8;
+/*fin ej5.1*/
+}
+
+
+#lateral #noticias{
+/*ej4.3*/
+border: 1px solid #C5C5C5;
+/*fin ej4.3*/
+
+/*ej5.1.*/
+background-color:#F8F8F8;
+/*fin ej5.1*/
+}
+
+
+
+
+/*Si abajo ponemos solo #secundario, no nos pone el borde, pues arriba hay puesto
+#contenido #secundario con la propiedad none. Esto es más especifico que 
+#secundario.*/
+
+/*ej4.5*/
+#contenido #secundario
+{
+  border: 1px solid #C60;
+}
+/*fin ej4.5*/
+
+/*ej5.3*/
+#contenido #secundario h2{
+background-color:#DB905C;
+padding:.2em;
+}
+/*fin ej5.3*/
+
+
+
