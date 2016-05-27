@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Lenguage de Marcas</title>
+ <meta charset="utf-8" />
+ <style> 
+  .tabla {
+     border-collaps: 40px; text-align:center; border: 3px solid red;
+     }
+  h1{
+    text-align:center;
+    }
+  h2{
+    text-align:center; color:red; border-color: black 1px;
+    }
+  h3{
+    font-size: 15px;
+    }
+  .derecha{
+    text-align: right;
+  }
+  .izquierda{
+    text-align: left;
+  }
+  .centro{
+    text-align: center;
+  }
+     
+ </style>
+</head>
+
+<body>
+
+ <h1>Tablas</h1><br/><br/><br/>
+<div class="cabecera" >
+ <h2><b><u>Ejercicios con tablas tema 4</u></b></h2><br/>
+</div>
+
+<div class="cuerpo">
+  <table class="tabla">
+  <thead>
+   <tr>
+    <th colspan="5">Extremeña de Teléfonos</th>
+   </tr>
+   <tr>
+    <th colspan="5">Detalle del cuotas</th>
+   </tr>
+  </thead>
+
+  <tfoot>
+   <tr>
+    <td class="izquierda" colspan="2">TOTAL</td>
+    <td class="derecha" colspan="3">16,5 €</td>
+   </tr>
+  </tfoot>
+
+  <tbody>
+   <tr>
+    <td>PERIODO</td>
+    <td>CONCEPTO</td>
+    <td>IMPORTE</td>
+    <td colspan="2">DESCUENTO</td>
+   </tr>
+   <tr>
+    <td rowspan="3">01/05/13-01/06/13</td>
+    <td class="izquierda">Servicio de identicicación de llamadas</td>
+    <td>12€</td>
+    <td colspan="2">0</td>
+   </tr>
+   <tr>
+    <td class="izquierda">Línea individual</td>
+    <td>14€</td>
+    <td colspan="2">0</td>
+   </tr>
+   <tr>
+    <td class="izquierda">Bono ciudad</td>
+    <td>10€</td>
+    <td colspan="2">0</td>
+   </tr>
+   <tr>
+    <td class="izquierda"colspan="2">TOTAL</td>
+    <td class="derecha" colspan="3">36€</td>
+   </tr>
+   <tr>
+    <td colspan="5">Detalle del consumo</td>
+   </tr>
+   <tr class="centro">
+    <td>CONCEPTO</td>
+    <td>LLAMADAS</td>
+    <td>DURACIÓN</td>
+    <td>IMPORTE</td>
+    <td>DESCUENTO</td>
+   </tr>
+   <tr>
+    <td class="izquierda">Llamadas internacionales</td>
+    <td>23</td>
+    <td>10m 23s</td>
+    <td>13€</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td class="izquierda">Llamadas nacionales</td>
+    <td>24</td>
+    <td>43m 94s</td>
+    <td>8,5 €</td>
+    <td>0</td>
+   </tr>
+  </tbody>
+  </table>
+  <hr style="height:4px;color:gray">
+  
+<div class="pie">
+ <h3>Pagina creada por Costy</h3>
+</div>
+  
+</body>
+</html>
