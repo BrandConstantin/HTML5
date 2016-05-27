@@ -1,0 +1,101 @@
+/* Font Google - strong reaload time */
+
+@font-face {
+  font-family: 'SansationLight';
+  src: url('SansationLight.woff');
+}
+
+body{
+  background-color:#F7C5CD;
+}
+
+table { 
+    margin: 100px auto;
+    padding: 15px;
+    background-color: #F1A1AD;
+    color: #FFF;
+}
+
+a{
+  text-decoration:none;
+  color: #00b7b7;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+a:visited{
+  color: #4545DD;
+  background-color:transparent;
+  text-decoration: underline;
+}
+
+.titulo{
+  font-size:3rem;
+  font-weight: 100;
+  color: #FFF;
+}
+
+.titulo:first-letter{
+  font-size:6rem;
+  color:#f600B8;
+}
+
+.descarga{
+  font-size:2rem;
+  font-style: italic;
+}
+
+.inicio{
+  color:#FFF;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+input[type=submit] {
+    background-color: #f600B8;
+    color: #FFF;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align:center;
+    width:300px;
+    height:40px;
+}
+
+.registrate{
+  text-align:center;
+}
+
+.iniciaSesion{
+  text-align:center;
+}
+
+input[name="nombre"]{
+  width:250px;
+}
+
+input[name="correo"]{
+  width:250px;
+}
+
+input[name="contraseña"]{
+
+}
+
+.pais{
+  width:252px;
+}
+
+.dia, .anio{
+  width:50px;
+}
+.mes{
+  width:147px;
+}
+
+.principal{
+  font-family: 'SansationLight';
+}
+
