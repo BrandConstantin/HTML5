@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+ 
+ <h2><b><u>Ejercicio 1</u></b></h2><br/>
+ <form action="procesando.html" method="post" enctype="multipart/form-data">
+ <fieldset>
+ 	<legend>Datos básicos</legend>
+ 		 <table>
+			 <tr>
+			  <td><label for="nom">Nombre:</label></td>
+			  <td><input type="text" name="nom" id="nom" size="45"></td>
+			 </tr>
+			 <tr>
+			 	<td><label for="comentario">Descripción:</label></td>
+			 	<td><textarea maxlength="250" name="Comentario" cols="35" rows="5" scrool="yes"></textarea></td>
+			 </tr>
+			 <tr>
+			 	<td><label for="foto">Foto:</label></td>
+			 	<td><input name="foto" type="file" size="40" /></td>
+			 </tr>
+			 <tr><td><input name="accepat" type="checkbox" value="acceptar"><label for="acceptar">Añadir contador de visitas:</label></td></tr>
+		 </table> 
+ </fieldset>
+ <fieldset>
+ 	 	<legend>Datos económicos</legend>
+ 	 		<table>
+ 	 			<tr>
+ 	 				<td><label for="precio">Precio:</label>
+ 	 				    <input type="text" name="precio" id="precio" size="10">€</td>
+ 	 				<td>Impuesto
+ 	 					<select>
+ 	 					<option>4%</option>
+ 	 					<option>7%</option>
+ 	 					<option>10%</option>
+ 	 					<option>25%</option>
+ 	 				</select></td>
+ 	 			</tr>
+ 	 			<tr><td>Promoción</td></tr>
+				<tr><td><input name="promo" type="radio" value="promo">Ninguno</td></tr>
+				<tr><td><input name="promo" type="radio" value="promo">Transporte gratuito</td></tr>
+				<tr><td><input name="promo" type="radio" value="promo">Descuento 5%</td></tr>
+ 	 		</table>
+			<br>
+			<br>
+			<input name="Restablecer" type="reset" value="Restablecer">
+			<input name="Enviar" type="submit" value="Enviar">
+ </fieldset>
+</body>
+</html>

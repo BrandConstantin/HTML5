@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formulario</h1>
+ <br/><br/><br/>
+ 
+ <h2>Introduce tus datos de usuario</h2>
+ <br/>
+  <form action="datosUsuario.asp" method="post" ectype="mulitpar/form-data">
+ <table>
+   <tr>
+    <td>Nombre Usuario:</td>
+    <td><input type="text" name="nombre"></td>
+   </tr>
+   <tr>
+    <td>Aficiones:</td>
+    <td><textarea name="aficiones" cols="20" rows="3"></textarea></td>
+   </tr>
+   <tr>
+    <td>Contraseña: </td>
+    <td><input name="contraseña" type="password" value="contraseña" size="10"></td>
+   </tr>
+   <tr>
+    <td>Foto Perfil: </td>
+    <td><input name="fotoPerfil" value="Sube la foto aqui"></td>
+   </tr>
+   <tr>
+    <td>Ecoje la modalidad de ponerse en contacto contigo los demas usuarios</td>
+    <td>
+      Correo Personal<input name="modalidad" type="radio" >
+      Correo Plataforma<input name="modalidad" type="radio" checked>
+      Telefono<input name="modalidad" type="radio">
+      Mensaje plataforma<input name="modalidad" type="radio">
+      Comentario post<input name="modalidad" type="radio">
+    </td>
+   </tr>
+   <tr>
+    <td><button type="submit" name="Submit">Enviar</button> </td>
+    <td><button type="reset" name="Reset">Borrar</button></td>
+   </tr>
+ </table>
+ <p>Envia los datos y sigue completando formulario con datos de usuario <a href="cursos.html">aqui</a></p>
+ </form>
+</body>
+</html>

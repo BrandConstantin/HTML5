@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formulario</h1>
+ <br/><br/><br/>
+ 
+ <h2>Introduce tus datos personales</h2>
+ <br/>
+  <form action="datosPersonales.asp" method="post" enctype="text/plain">
+ <table>
+   <tr>
+    <td>Nombre:</td>
+    <td><input type="text" name="nombre"></td>
+   </tr>
+   <tr>
+    <td>Apellidos:</td>
+    <td><input type="text" name="nombre"></td>
+   </tr>
+   <tr>
+    <td>Correo: </td>
+    <td><input name="correo" type="email" id="correo" size="50"></td>
+   </tr>
+   <tr>
+    <td>Pais de residencia</td>
+    <td>
+      <select name="pais" size="5" >
+      <option selected>---Elige el pais---</option>
+      <option>Rumania</option>
+      <option>Portugal</option>
+      <option>España</option>
+      <option>Italia</option>
+      <option>America</option>
+      <option>Brasil</option>
+      <option>China</option>
+      <option>Eslovaquia</option>
+      <option>Francia</option>
+      <option>Ucrania</option>
+      <option>Pakistan</option>
+      <option>India</option>
+      </select>
+    </td>
+   </tr>
+   <tr>
+    <td><button type="submit" name="Submit">Enviar</button> </td>
+    <td><button type="reset" name="Reset">Borrar</button></td>
+   </tr>
+ </table>
+ <p>Envia los datos y sigue completando formulario con datos de usuario <a href="datosUsuario.html">aqui</a></p>
+ </form>
+</body>
+</html>

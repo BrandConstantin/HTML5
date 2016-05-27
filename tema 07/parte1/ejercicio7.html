@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+ 
+ <h2><b><u>Ejercicio 7</u></b></h2><br/>
+
+ <form action="procesando.html" method="post" enctype="text/plain">
+  <fieldset>
+    <legend>Datos personales</legend>
+    Apellido y Nombre:<input type="text" name="nombre"><br>
+    <br>
+    DNI:<input name="DNI" type="text" size="8"><br>
+    <br>
+    Fecha Nacimiento:<input type="text" name="fechaNacimiento" size="10"><br>
+    <br>
+    Dirección:<input type="text" name="dirección" size="30">
+  </fieldset>
+  <fieldset>
+    <legend>Datos Laborales</legend>
+    Nombre Empresa:<input type="text" name="nombreEmpresa" size="15"><br>
+    <br>
+    Actividad:<input name="actividad" type="text" size="15"><br>
+    <br>
+    Dirección:<input type="text" name="dirección" size="30">
+  </fieldset>
+  <button type="submit" name="Submit">Enviar</button><br>
+  <button type="reset" name="reset">Borrar</button><br>
+ </form>
+</body>
+</html>

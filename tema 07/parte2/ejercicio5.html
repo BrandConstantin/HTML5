@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+<div>
+ <form action="procesando.html" method="post" enctype="multipart/form-data">
+	 <table>
+	 <tr><td colspan="2">Buscar Alojamiento Rural</td></tr>
+	 <tr>
+	  <td colspan="2"><select>
+			<option selected disabled>Selecciona la Provincia</option>
+			<option>Málaga</option>
+			<option>Cadiz</option>
+			<option>Almeria</option>
+			<option>Barcelona</option>
+			<option>Madrid</option>
+			<option>Cordoba</option>
+		</select></td>
+	 </tr>
+	 <tr><td colspan="2"><input type="search" name="search" id="search" maxlength="10"></td></tr>
+	 <tr><td colspan="2"></td></tr>
+ 	 <tr><td colspan="2"></td></tr>
+	 <tr><td colspan="2">Más filtros de busqueda</td></tr>
+	 <tr><td colspan="2">Tipo de Alquiler</td></tr>
+	 <tr><td colspan="2"><select>
+				<option selected disabled>Todos</option>
+				<option>Muy caro</option>
+				<option>Caro</option>
+				<option>Normalito</option>
+				<option>Barato</option>
+				<option>Muy barato</option>
+				<option>Gratis</option>
+			 </select>
+		 </td>
+	 </tr>
+ 	 <tr>
+ 	 	<td class="nuevo">Nº Plazas</td>
+ 	 	<td class="nuevo">Precio/Perosna</td>
+ 	 </tr>
+	 <tr><td><select>
+				<option selected disabled>Todos</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			 </select>
+		 </td>
+		 <td><select>
+				<option selected disabled>Todos</option>
+				<option>10€</option>
+				<option>20€</option>
+				<option>30€</option>
+				<option>40€</option>
+				<option>50€</option>
+				<option>60€</option>
+			 </select>
+		 </td>
+	 </tr>
+	 <tr>
+	 	<td colspan="2">Población</td>
+	 </tr>
+	 <tr>
+	 	<td colspan="2">
+	 		<select>
+				<option selected disabled>Todas Pobl.</option>
+				<option>Cercana</option>
+				<option>En el mismo sitio</option>
+				<option>Lejana</option>
+				<option>No Importa</option>
+			</select>
+		</td>
+	 </tr>
+ 	 <tr><td></td></tr>
+ 	 <tr><td></td></tr>
+	 <tr><td>Caracteristicas</td></tr>
+	 <tr>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Barbacoa</td>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Jardin</td>
+	 </tr>
+	 <tr>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Mascotas</td>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Piscina</td>
+	 </tr>
+ 	 <tr>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Chimenea</td>
+	 	<td><input name="caracteristicas" type="checkbox" value="caracteristicas">Jacuzzi</td>
+	 </tr>
+	 <tr><td colspan="2">[+] Caracteristicas</td></tr>
+	 <tr><td></td></tr>
+ 	 <tr><td></td></tr>
+	 <tr><td>Actividades</td></tr>
+	 <tr><td><input name="caracteristicas" type="checkbox" value="caracteristicas">Senderismo</td>
+	     <td><input name="caracteristicas" type="checkbox" value="caracteristicas">Aventura</td>
+	 </tr>
+ 	 <tr><td colspan="2">[+] Actividades</td></tr>
+ 	 <tr><td colspan="2"><input name="buscar" type="submit" value="Buscar"></td></tr>
+  	 <tr><td colspan="2"><input name="Restablecer" type="reset" value="[Borrar Filtros]"></td></tr>
+	</table> 
+	<br>
+	<br>
+  <table>
+    <tr>
+      <td><input name="Restablecer" type="reset" value="Restablecer"></td>
+      <td><input name="Enviar" type="submit" value="Enviar"></td>
+    </tr>
+  </table>
+  </div>
+</body>
+</html>

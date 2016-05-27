@@ -1,0 +1,27 @@
+  h1{
+    text-align:center; 
+    }
+  h2{
+    color:red; text-style: underline ;
+    }
+  p{
+    font-size: 15px;
+  }
+  ul{
+   margin-left: 40px; 
+   text-color: brown;
+   list-style-type: upper-alpha;
+   }
+  a:hover{
+    color: brown;
+    background-color:transparent;
+    text-decoration: underline;
+    }
+  a:visited{
+    color: blue;
+    background-color:transparent;
+    text-decoration: underline;
+    }
+  body{
+    background-color:#BFBEFC;
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+ 
+ <h2><b><u>Ejercicio 4</u></b></h2><br/>
+ 
+ <p>Ingrese tu correo y una contraseña y escoge las peliculas que quieres descargarte:</p>
+
+ <form action="formulario.asp" method="post" enctype="text/plain">
+ <table>
+ <tr>
+  <td>Correo:</td>
+  <td><input name="correo" type="email" id="correo" size="50"></td>
+ </tr>
+ <tr>
+  <td>Contraseña</td>
+  <td><input name="contraseña" type="password" value="contraseña" size="30"></td>
+ </tr>
+ <tr>
+  <td colspan="2">PELICULAS:</td>
+ </tr>
+  <tr>
+    <td>El señor del anillo<input name="pelis" type="checkbox" value="acceptar" checked></td>
+    <td>El pianista<input name="pelis" type="checkbox" value="acceptar"></td>
+  </tr>
+  <tr>
+    <td>Matrix<input name="pelis" type="checkbox" value="acceptar"></td>
+    <td>Malditos bastardos<input name="pelis" type="checkbox" value="acceptar"></td>
+  </tr>
+  <tr>
+    <td>Avatar<input name="pelis" type="checkbox" value="acceptar"></td>
+    <td>La guerra de los mundos<input name="pelis" type="checkbox" value="acceptar"></td>
+  </tr>
+  <tr>
+    <td>Gladiator<input name="pelis" type="checkbox" value="acceptar"></td>
+    <td>Bravehart<input name="pelis" type="checkbox" value="acceptar"></td>
+  </tr>
+ <tr>
+  <td><button type="submit" name="Submit">Enviar</button></td>
+  <td><button type="reset" name="Reset">Borrar</button></td>
+ </tr>
+ </table>
+</form>
+</body>
+</html>

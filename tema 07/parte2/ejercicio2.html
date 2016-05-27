@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+ 
+ <h2><b><u>Ejercicio 2</u></b></h2><br/>
+ <form action="procesando.html" method="post" enctype="multipart/form-data">
+ <fieldset>
+ 	<legend>Datos personales</legend>
+ 		 <table>
+			 <tr><td><label for="pro">Provincia:</label></td></tr>
+			 <tr>
+			  <td><select>
+ 	 					<option>-seleciona-</option>
+ 	 					<option>Málaga</option>
+ 	 					<option>Cadiz</option>
+ 	 					<option>Almeria</option>
+ 	 					<option>Barcelona</option>
+ 	 					<option>Madrid</option>
+ 	 					<option>Cordoba</option>
+ 	 				</select></td>
+			 </tr>
+			 <tr><td><label for="nacimiento">Fecha de nacimiento:</label></td></tr>
+			 <tr>
+			 	<td><input type="text" name="dia" id="dia" size="2"> de
+			 		<select>
+ 	 					<option>Enero</option>
+ 	 					<option>Febrero</option>
+ 	 					<option>Marzo</option>
+ 	 					<option>Abril</option>
+ 	 					<option>Mayo</option>
+ 	 					<option>Junio</option>
+ 	 					<option>Julio</option>
+ 	 				</select> de
+ 	 				<input type="text" name="año" id="año" size="4">
+ 	 			</td>
+			 </tr>
+			 <tr><td>Temas de interés:</td></tr>
+			 <tr>
+			 	<td>
+				   <select name="colores" size="5" multiple="multiple">
+				    <option>Administración de bases de datos</option>
+				    <option>Análisis y programación</option>
+				    <option>Arquitectura</option>
+				    <option>ERP, CRM</option>
+				    <option>Calidad</option>
+				    <option>Business Intelligence</option>
+				    <option>Security on Internet</option>
+				    <option>Campus Tech</option>
+				    <option>Java</option>
+				    <option>Desarrollo Web</option>
+		   		   </select>
+			 	</td>
+			 </tr>
+		 </table> 
+		<br>
+		<br>
+		<input name="Restablecer" type="reset" value="Restablecer">
+		<input name="Enviar" type="submit" value="Enviar">
+ </fieldset>
+</body>
+</html>

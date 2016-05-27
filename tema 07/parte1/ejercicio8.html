@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Html y Css</title>
+ <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen" />
+</head>
+
+<body>
+
+ <h1>Formularios</h1><br/><br/><br/>
+ 
+ <h2><b><u>Ejercicio 8</u></b></h2><br/>
+
+ <form action="procesando.html" method="post" enctype="text/plain">
+  <fieldset>
+    <legend>Libro Visitas</legend>
+    Nombre:<input type="text" name="nombre"><br>
+    <br>
+    Email:<input name="correo" type="email" id="correo" size="50"><br>
+    <br>
+    Pais:<select name="paises">
+    <option>selecione pais</option>
+    <option>Rumania</option>
+    <option>Italia</option>
+    <option>España</option>
+    <option>Francia</option>
+    <option>Portugal</option>
+    <option>Grecia</option>
+    </select>
+    Califica el sitio:<select name="calificación">
+    <option>bueno</option>
+    <option>muy malo</option>
+    <option>malo</option>
+    <option>regular</option>
+    <option>muy bueno</option>
+    <option>excelente</option>
+    </select>
+    <br>
+    <p>Deja algún comentario:</p><textarea name="ejemplo" cols="50" rows="10">Ingrese aqui tu comentario ....</textarea>
+  </fieldset>
+  <button type="submit" name="Submit">Enviar</button><br>
+  <button type="reset" name="reset">Borrar</button><br>
+ </form>
+</body>
+</html>
